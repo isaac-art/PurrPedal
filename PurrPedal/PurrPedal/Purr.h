@@ -17,4 +17,5 @@
 @property AKInstrumentProperty *sawFreq;
 @property AKInstrumentProperty *LFOnoiseFreq;
 
+
 @end

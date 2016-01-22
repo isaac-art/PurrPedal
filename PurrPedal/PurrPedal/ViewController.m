@@ -6,21 +6,23 @@
 //  Copyright © 2016 Isaac Clarke. All rights reserved.
 
 //
+#define radiansToDegrees( radians ) ( ( radians ) * ( 180.0 / M_PI ) )
 
 #import "ViewController.h"
 #import "AKFoundation.h"
 #import "Purr.h"
 
 
-#define radiansToDegrees( radians ) ( ( radians ) * ( 180.0 / M_PI ) )
-
 @implementation ViewController
 {
     Purr *purr;
+    BOOL chaos;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //background audio stuff here
+
     //first time instructions
     static NSString* const hasRunAppOnceKey = @"hasRunAppOnceKey";
     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
@@ -62,18 +64,45 @@
     return YES;
 }
 
+
+- (IBAction)handleLongPress:(UILongPressGestureRecognizer *)recognizer{
+    if ( recognizer.state == UIGestureRecognizerStateEnded ){
+    if (chaos){
+        [self changeColor];
+        chaos = NO;
+    }else{
+        chaos = YES;
+        self.view.backgroundColor = [UIColor blackColor];
+    }
+    }
+}
+
+
 - (IBAction)handleRotate:(UIRotationGestureRecognizer *)recognizer {
     recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
     
     float myDegrees = radiansToDegrees( recognizer.rotation );
     float biggerNum = myDegrees * 100;
-    if (biggerNum > 0) {
-        purr.sawFreq.value = biggerNum;
-        
-   }else{
-//        purr.sawSpeed.value = myDegrees;
+    if (chaos) {
+        int lowerBound = 1;
+        int upperBound = 1000;
+        int rndValue = lowerBound + arc4random() % (upperBound - lowerBound);
+        purr.sawFreq.value = rndValue;
+        int lowerBound2 = 0;
+        int upperBound2 = 10;
+        int rndValue2 = lowerBound2 + arc4random() % (upperBound2 - lowerBound2);
+        purr.sawSpeed.value = rndValue2;
+    }else{
+        if (biggerNum >0) {
+                float higherPurrValue = (purr.sawFreq.value + 1);
+                purr.sawFreq.value = higherPurrValue;
+        }else{
+            if (purr.sawFreq.value >=2) {
+                    float higherPurrValue = (purr.sawFreq.value - 1);
+                    purr.sawFreq.value = higherPurrValue;
+            }
+        }
     }
-    
     //last reset
     recognizer.rotation = 0;
 
@@ -111,7 +140,11 @@
         [self changeColor];
         purr.sawFreq.value = 20;
         purr.sawSpeed.value = 0.18;
+        chaos = NO;
     }
     
 }
+
+
+
 @end

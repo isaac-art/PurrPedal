@@ -13,6 +13,7 @@
 
 
 - (IBAction)handleRotate:(UIRotationGestureRecognizer *)recognizer;
+- (IBAction)handleLongPress:(UILongPressGestureRecognizer *)recognizer;
 
 @property (strong, nonatomic) NSArray *colors;
 

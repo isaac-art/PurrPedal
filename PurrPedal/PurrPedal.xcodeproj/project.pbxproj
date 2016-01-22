@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A494D8A1C4AC4FF008D3D3D /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A494D891C4AC4FF008D3D3D /* welcome.png */; };
 		6A65F4A31C48056D00A0ABFA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A65F49E1C48056D00A0ABFA /* Default-568h@2x.png */; };
 		6A65F4A41C48056D00A0ABFA /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A65F49F1C48056D00A0ABFA /* Default-667h@2x.png */; };
 		6A65F4A51C48056D00A0ABFA /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A65F4A01C48056D00A0ABFA /* Default-736h@3x.png */; };
@@ -27,7 +28,7 @@
 		6A7809361C3ED0A90058A261 /* CsoundLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7809311C3ED0A00058A261 /* CsoundLib.framework */; };
 		6A7809371C3ED0A90058A261 /* CsoundLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A7809311C3ED0A00058A261 /* CsoundLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6A78093A1C3ED2940058A261 /* Purr.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A7809391C3ED2940058A261 /* Purr.m */; };
-		6AC1CBF21C4961B600701ACC /* welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1CBF11C4961B600701ACC /* welcome.png */; };
+		6AD655561C4C42340098D4F6 /* AudioKit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AD655551C4C42340098D4F6 /* AudioKit.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6A494D891C4AC4FF008D3D3D /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
 		6A65F49E1C48056D00A0ABFA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6A65F49F1C48056D00A0ABFA /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
 		6A65F4A01C48056D00A0ABFA /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		6A7809311C3ED0A00058A261 /* CsoundLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CsoundLib.framework; sourceTree = "<group>"; };
 		6A7809381C3ED2940058A261 /* Purr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Purr.h; sourceTree = "<group>"; };
 		6A7809391C3ED2940058A261 /* Purr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Purr.m; sourceTree = "<group>"; };
-		6AC1CBF11C4961B600701ACC /* welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = welcome.png; sourceTree = "<group>"; };
+		6AD655551C4C42340098D4F6 /* AudioKit.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AudioKit.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 				6A7808ED1C3ECDEE0058A261 /* Main.storyboard */,
 				6A7808F01C3ECDEE0058A261 /* Assets.xcassets */,
 				6A7808F51C3ECDEE0058A261 /* Info.plist */,
+				6AD655551C4C42340098D4F6 /* AudioKit.plist */,
 				6A7808E41C3ECDEE0058A261 /* Supporting Files */,
 			);
 			path = PurrPedal;
@@ -192,7 +195,7 @@
 		6A7808E41C3ECDEE0058A261 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6AC1CBF11C4961B600701ACC /* welcome.png */,
+				6A494D891C4AC4FF008D3D3D /* welcome.png */,
 				6A65F49E1C48056D00A0ABFA /* Default-568h@2x.png */,
 				6A65F49F1C48056D00A0ABFA /* Default-667h@2x.png */,
 				6A65F4A01C48056D00A0ABFA /* Default-736h@3x.png */,
@@ -303,7 +306,7 @@
 						CreatedOnToolsVersion = 7.1.1;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -374,9 +377,10 @@
 			files = (
 				6A7808F11C3ECDEE0058A261 /* Assets.xcassets in Resources */,
 				6A65F4A61C48056D00A0ABFA /* Default.png in Resources */,
-				6AC1CBF21C4961B600701ACC /* welcome.png in Resources */,
+				6A494D8A1C4AC4FF008D3D3D /* welcome.png in Resources */,
 				6A65F4A41C48056D00A0ABFA /* Default-667h@2x.png in Resources */,
 				6A65F4A51C48056D00A0ABFA /* Default-736h@3x.png in Resources */,
+				6AD655561C4C42340098D4F6 /* AudioKit.plist in Resources */,
 				6A7808EF1C3ECDEE0058A261 /* Main.storyboard in Resources */,
 				6A65F4A71C48056D00A0ABFA /* Default@2x.png in Resources */,
 				6A65F4A31C48056D00A0ABFA /* Default-568h@2x.png in Resources */,

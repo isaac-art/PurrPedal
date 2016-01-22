@@ -36,11 +36,15 @@
 		<data>
 		2qEIFA/gycvnhEh88z1Mj2AWXoU=
 		</data>
+		<key>AudioKit.plist</key>
+		<data>
+		osFmS7gb43AadmanldQ3uBOa2+g=
+		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7z6VTMZl2fQRHAF9qTDWuoPF6S0=
+			LUV9is5J6ITb/rT96AwyRw022RE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -58,7 +62,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVIDUW8M7BL/tokut3+ArNUcQgI=
+			Wi2fxKBwf1R/ZAUY9JaOEabl8zY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -85,31 +89,31 @@
 		</data>
 		<key>Frameworks/CsoundLib.framework/CsoundLib</key>
 		<data>
-		Qh7gTwTfYGYQaKuyEf00qMVIo9Q=
+		RNNkFiXwLvNNNOm3yU7f39dIRfA=
 		</data>
 		<key>Frameworks/CsoundLib.framework/Info.plist</key>
 		<data>
-		KGGbfvqcypxf8wfBoQrrA7qh7xI=
+		dhaAuHPED4HMIIEZ7bxKp9YJJ2s=
 		</data>
 		<key>Frameworks/CsoundLib.framework/_CodeSignature/CodeResources</key>
 		<data>
-		5heHa7txr/b1fKlshDLYWfckUFw=
+		Fr62b9egMEApJD9dawJqN/3bd90=
 		</data>
 		<key>Frameworks/libsndfile.framework/Info.plist</key>
 		<data>
-		6YmdEBcmE0Tfv09X+P0PJ+VbOkc=
+		/0co5vmVBWq+1WlqgiD0gR8Lc+8=
 		</data>
 		<key>Frameworks/libsndfile.framework/_CodeSignature/CodeResources</key>
 		<data>
-		1z3jTKZ+N/MNQai3TbQLdXEzhxg=
+		xPAzJxiLey2N9embBE+oqvjTEFQ=
 		</data>
 		<key>Frameworks/libsndfile.framework/libsndfile</key>
 		<data>
-		JmVvDjc5ErCjrf429DyEpF5wIHs=
+		Lbn2SRz4oPOGklTezWkIw75GYYE=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UwMMKN7yM0iDQb0u7DRFRG3FdvY=
+		r6G1gcS8e5JyUcv2exIwo4KCObo=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -121,7 +125,7 @@
 		</data>
 		<key>welcome.png</key>
 		<data>
-		y8XSXb8hrVeqCtlqSM+z8gPxxAc=
+		bR4ZO7Mme4O2/pDS2oxGUNW46Y8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -158,11 +162,15 @@
 		<data>
 		2qEIFA/gycvnhEh88z1Mj2AWXoU=
 		</data>
+		<key>AudioKit.plist</key>
+		<data>
+		osFmS7gb43AadmanldQ3uBOa2+g=
+		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7z6VTMZl2fQRHAF9qTDWuoPF6S0=
+			LUV9is5J6ITb/rT96AwyRw022RE=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -180,7 +188,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LVIDUW8M7BL/tokut3+ArNUcQgI=
+			Wi2fxKBwf1R/ZAUY9JaOEabl8zY=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -207,27 +215,27 @@
 		</data>
 		<key>Frameworks/CsoundLib.framework/CsoundLib</key>
 		<data>
-		Qh7gTwTfYGYQaKuyEf00qMVIo9Q=
+		RNNkFiXwLvNNNOm3yU7f39dIRfA=
 		</data>
 		<key>Frameworks/CsoundLib.framework/Info.plist</key>
 		<data>
-		KGGbfvqcypxf8wfBoQrrA7qh7xI=
+		dhaAuHPED4HMIIEZ7bxKp9YJJ2s=
 		</data>
 		<key>Frameworks/CsoundLib.framework/_CodeSignature/CodeResources</key>
 		<data>
-		5heHa7txr/b1fKlshDLYWfckUFw=
+		Fr62b9egMEApJD9dawJqN/3bd90=
 		</data>
 		<key>Frameworks/libsndfile.framework/Info.plist</key>
 		<data>
-		6YmdEBcmE0Tfv09X+P0PJ+VbOkc=
+		/0co5vmVBWq+1WlqgiD0gR8Lc+8=
 		</data>
 		<key>Frameworks/libsndfile.framework/_CodeSignature/CodeResources</key>
 		<data>
-		1z3jTKZ+N/MNQai3TbQLdXEzhxg=
+		xPAzJxiLey2N9embBE+oqvjTEFQ=
 		</data>
 		<key>Frameworks/libsndfile.framework/libsndfile</key>
 		<data>
-		JmVvDjc5ErCjrf429DyEpF5wIHs=
+		Lbn2SRz4oPOGklTezWkIw75GYYE=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -235,7 +243,7 @@
 		</data>
 		<key>welcome.png</key>
 		<data>
-		y8XSXb8hrVeqCtlqSM+z8gPxxAc=
+		bR4ZO7Mme4O2/pDS2oxGUNW46Y8=
 		</data>
 	</dict>
 	<key>rules</key>

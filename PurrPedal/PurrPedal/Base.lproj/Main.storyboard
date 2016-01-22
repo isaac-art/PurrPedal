@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="oSc-Rg-ygB" customClass="catView">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="cat3" translatesAutoresizingMaskIntoConstraints="NO" id="oSc-Rg-ygB" customClass="catView">
                                 <rect key="frame" x="200" y="86" width="200" height="225"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.2784313725" green="0.50588235290000005" blue="0.61176470589999998" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -25,9 +25,10 @@
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="LFi-j9-BBa" appends="YES" id="Bmk-PQ-Bbh"/>
+                                    <outletCollection property="gestureRecognizers" destination="aGu-wr-Akq" appends="YES" id="qFT-jT-Gci"/>
                                 </connections>
                             </imageView>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ag-Wz-AS7" customClass="AKAudioOutputRollingWaveformPlot">
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Ag-Wz-AS7" customClass="AKAudioOutputRollingWaveformPlot">
                                 <rect key="frame" x="20" y="373" width="278" height="128"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -61,12 +62,17 @@
                         <action selector="handleRotate:" destination="BYZ-38-t0r" id="3bE-VD-TXq"/>
                     </connections>
                 </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="aGu-wr-Akq">
+                    <connections>
+                        <action selector="handleLongPress:" destination="BYZ-38-t0r" id="mlQ-jc-uKI"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="239" y="326"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cat" width="200" height="228"/>
+        <image name="cat3" width="200" height="200"/>
     </resources>
     <color key="tintColor" red="0.98823529409999999" green="0.51764705879999995" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
 </document>

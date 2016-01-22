@@ -21,6 +21,7 @@
         _sawFreq = [self createPropertyWithValue:20 minimum:1 maximum:150];
         _LFOnoiseFreq = [self createPropertyWithValue:0.15 minimum:0.1 maximum:8];
 
+
         //Saw
         AKJitter *frequencyVariation =[[AKJitter alloc] initWithAmplitude:akp(0.1) minimumFrequency:akp(0.01) maximumFrequency:akp(0.1)];
         AKJitter *frequencyVariation2 =[[AKJitter alloc] initWithAmplitude:akp(6) minimumFrequency:akp(0.06) maximumFrequency:akp(0.1)];
@@ -51,17 +52,10 @@
         AKLowPassFilter *noiseFilter = [[AKLowPassFilter alloc] initWithInput:pinkNoise];
         noiseFilter.halfPowerPoint = [_pinkHalfPower scaledBy:LFOnoise];
 
-    //GeigerCount
-//        AKAudioInput *microphone = [[AKAudioInput alloc] init];
-//        AKTrackedAmplitude *geigerCounter;
-//        geigerCounter = [[AKTrackedAmplitude alloc] initWithInput:microphone];
-//        //get geiger click and if clicks start measure time
-        
         //audio out
         AKMix *noiseSawMix = [[AKMix alloc] initWithInput1:noiseFilter input2:BPF balance:_sawPinkMix];
-//
         
-        [self setAudioOutput:noiseSawMix];
+    [self setAudioOutput:noiseSawMix];
    
     }
     return self;
