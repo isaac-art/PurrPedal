@@ -1,6 +1,6 @@
 # PurrPedal
 
-> currently not availble on the app store - won't be up until i renew my account
+> currently not available on the app store - won't be up until i renew my account
 
 a purring noise generator for iOS
 
