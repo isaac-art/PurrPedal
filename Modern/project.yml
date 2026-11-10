@@ -1,0 +1,35 @@
+name: PurrPedalModern
+options:
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  PurrPedal:
+    type: application
+    platform: iOS
+    sources:
+      - path: Sources
+      - path: Assets.xcassets
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.isaacclarke.PurrPedal
+        PRODUCT_NAME: PurrPedal
+        MARKETING_VERSION: 1.3
+        CURRENT_PROJECT_VERSION: 1
+        SWIFT_VERSION: 5.0
+        TARGETED_DEVICE_FAMILY: 1
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: PurrPedal
+        INFOPLIST_KEY_ITSAppUsesNonExemptEncryption: NO
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UIBackgroundModes: audio
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+    info:
+      path: Sources/Info.plist
+      properties:
+        CFBundleDisplayName: PurrPedal
+        ITSAppUsesNonExemptEncryption: false
+        UILaunchScreen: {}
+        UIBackgroundModes: [audio]
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
