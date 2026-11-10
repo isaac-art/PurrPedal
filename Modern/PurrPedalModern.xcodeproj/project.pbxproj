@@ -82,6 +82,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					C17AF8CBF8EFBD46B060AB11 = {
+						DevelopmentTeam = KTRK2N7YV7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -256,6 +257,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTRK2N7YV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PurrPedal;
@@ -282,6 +284,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KTRK2N7YV7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = PurrPedal;

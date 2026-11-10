@@ -25,6 +25,7 @@ targets:
         INFOPLIST_KEY_UIBackgroundModes: audio
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: KTRK2N7YV7
     info:
       path: Sources/Info.plist
       properties:
