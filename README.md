@@ -9,6 +9,7 @@ uses Apple's AVAudioEngine and has no third-party runtime dependencies.
 Open `Modern/PurrPedalModern.xcodeproj` in Xcode 26 or newer and select the
 `PurrPedal` scheme. The bundle identifier is `com.isaacclarke.PurrPedal`, matching
 the existing App Store Connect record. Version 1.3 builds for iOS 16 and newer.
+Use Xcode 27.1 or newer for iPhone Duo testing and release validation.
 
 `Modern/project.yml` is the XcodeGen source for the project. To regenerate the
 project, run `xcodegen generate` from `Modern/`.
@@ -22,5 +23,5 @@ remain in Git history. They are not required by the new app.
   playback after interruptions. The simulator cannot verify actual speaker sound.
 - Archive with the Apple distribution team, upload build 1.3 to the existing
   App Store record, and capture current iPhone and iPhone Duo screenshots.
-- Set the United Kingdom base price to £0.99 and review Apple's converted
-  prices for all other storefronts before submitting for review.
+- The App Store Connect price is already £0.99 in the United Kingdom, with
+  Apple's comparable worldwide prices. Recheck the schedule before review.
