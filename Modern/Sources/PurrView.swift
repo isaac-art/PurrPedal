@@ -16,15 +16,17 @@ struct PurrView: View {
 
     var body: some View {
         GeometryReader { geometry in
+            let compactHeight = geometry.size.height < 500
             ZStack {
                 (sound.isChaotic ? Color.black : colors[colorIndex])
                     .ignoresSafeArea()
-                VStack(spacing: 20) {
-                    Spacer(minLength: 24)
+                VStack(spacing: compactHeight ? 10 : 20) {
+                    Spacer(minLength: compactHeight ? 4 : 24)
                     Image("cat3")
                         .resizable()
                         .scaledToFit()
-                        .frame(maxWidth: min(geometry.size.width * 0.72, 420))
+                        .frame(width: min(geometry.size.width * 0.72,
+                                          geometry.size.height * 0.42, 420))
                         .rotationEffect(angle)
                         .gesture(
                             RotationGesture()
@@ -57,7 +59,7 @@ struct PurrView: View {
                     .buttonStyle(.borderedProminent)
                     .controlSize(.large)
                     .accessibilityIdentifier("playbackButton")
-                    Spacer(minLength: 24)
+                    Spacer(minLength: compactHeight ? 4 : 24)
                 }
                 ShakeDetector {
                     sound.reset()
