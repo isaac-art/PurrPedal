@@ -30,6 +30,8 @@ targets:
       path: Sources/Info.plist
       properties:
         CFBundleDisplayName: PurrPedal
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
         ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UIBackgroundModes: [audio]

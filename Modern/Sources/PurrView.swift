@@ -70,6 +70,15 @@ struct PurrView: View {
                 }
                 .frame(width: 0, height: 0)
             }
+            .overlay(alignment: .topTrailing) {
+                Link("Privacy", destination: URL(string: "https://purrpedal.thanks.fish/privacy.html")!)
+                    .font(.caption.weight(.semibold))
+                    .padding(.horizontal, 12)
+                    .frame(minHeight: 44)
+                    .background(.regularMaterial, in: Capsule())
+                    .padding(.trailing, 8)
+                    .accessibilityIdentifier("privacyLink")
+            }
         }
     }
 }
